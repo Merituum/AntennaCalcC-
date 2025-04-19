@@ -8,7 +8,7 @@
 #include <QGridLayout>
 #include <QGroupBox>
 #include <QHBoxLayout>
-
+#include <QLabel>
 class CalculatorWindow : public QDialog {
     Q_OBJECT
 
@@ -16,10 +16,18 @@ public:
     explicit CalculatorWindow(QWidget *parent = nullptr);
     ~CalculatorWindow();
 private slots:
-    void onCalculateButtonClicked();
-    void onClearButtonClicked();
+    void onReturnButtonClicked();
+    void onYagiButtonClicked();
+    void onLpdaButtonClicked();
+    void onPatchButtonClicked();
+    void onDipoleButtonClicked();
 private:
-    QPushButton *calculateButton;
+    QPushButton *returnButton;
+    QPushButton *yagiButton;
+    QPushButton *lpdaButton;
+    QPushButton *dipoleButton;
+    QPushButton *patchButton;
+    QLabel *selectLabel;
     void setupUI();
 
 };
