@@ -1,0 +1,8 @@
+// W pliku .qrc (np. resources.qrc):
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>images/PUT.png</file>
+    </qresource>
+</RCC>
+

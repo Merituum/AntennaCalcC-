@@ -13,7 +13,60 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="calculateButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>221</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Antenna calculator</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="optionsButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>221</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="creditsButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>221</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Credits</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>221</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -23,6 +76,12 @@
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuAntenna_calculator_by_Merituum">
+    <property name="title">
+     <string>Antenna calculator by Merituum</string>
+    </property>
+   </widget>
+   <addaction name="menuAntenna_calculator_by_Merituum"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

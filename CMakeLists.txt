@@ -26,6 +26,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(AntennaCalcGUI
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        calculatorwindow.h calculatorwindow.cpp
+        calculatorwindow.ui
+        creditswindow.h creditswindow.cpp
+        optionswindow.h optionswindow.cpp
+        images/PUT.png
+        resources.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET AntennaCalcGUI APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
