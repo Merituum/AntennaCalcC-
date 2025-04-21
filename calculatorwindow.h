@@ -9,6 +9,16 @@
 #include <QGroupBox>
 #include <QHBoxLayout>
 #include <QLabel>
+#include "./ui_calculatorwindow.h"
+
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class CalculatorWindow;
+}
+QT_END_NAMESPACE
+
+
 class CalculatorWindow : public QDialog {
     Q_OBJECT
 
@@ -29,6 +39,11 @@ private:
     QPushButton *patchButton;
     QLabel *selectLabel;
     void setupUI();
+    Ui::Dialog *ui;
+
+
+
+
 
 };
 
