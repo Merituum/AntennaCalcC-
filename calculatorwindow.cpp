@@ -1,7 +1,7 @@
 #include "calculatorwindow.h"
 #include "mainwindow.h"
 #include "./ui_calculatorwindow.h" // ← to musi być przed użyciem Ui::CalculatorWindow
-
+#include "dipole_window.h"
 #include <QMessageBox>
 
 CalculatorWindow::CalculatorWindow(QWidget *parent)
@@ -51,7 +51,11 @@ void CalculatorWindow::onReturnButtonClicked() {
 void CalculatorWindow::onLpdaButtonClicked() {}
 
 
-void CalculatorWindow::onDipoleButtonClicked() {}
+void CalculatorWindow::onDipoleButtonClicked() {
+    DipoleWindow.exec();
+    this->close();
+
+}
 
 void CalculatorWindow::onPatchButtonClicked() {}
 

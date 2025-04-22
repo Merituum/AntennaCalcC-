@@ -33,6 +33,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         images/PUT.png
         resources.qrc
         resources.qrc
+        dipole_window.h dipole_window.cpp
+        dipole_ui.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET AntennaCalcGUI APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
